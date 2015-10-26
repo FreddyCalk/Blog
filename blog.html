@@ -4,11 +4,31 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Freddy's Blog</title>
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="jquery.flexslider-min.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+	<script>
+		$(window).load(function() {
+		  $('.flexslider').flexslider({
+		    animation: "slide"
+		  });
+		});		
+	</script>
 </head>
 <body>
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<ul class="nav navbar-nav">
+				<li><a class="navbar-brand" href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Blog</a></li>
+			</ul>
+		</div>
+	</nav>
+
 	<div id="blog-wrapper">
 		<div id="header">
 			<div class="header-text">
@@ -23,7 +43,28 @@
 		<div id="main-container">
 
 			<div class="blog-header-image">
-				<img src="BlogPhoto.jpg">
+				<div class="flexslider">
+				    <div class="flex-viewport">
+					    <ul class="slides">
+					        <li>
+					            <img src="BlogPhoto.jpg" />
+					            <p class="flex-caption"></p>
+					    	</li>
+					    	<li>
+					      		<img src="header_image.jpg" />
+					      		<p class="flex-caption"></p>
+					    	</li>
+					    	<li>
+					      		<img src="http://thenewportblast.com/wp-content/uploads/2015/05/Archer-Bond-Feature.jpg" />
+					      		<p class="flex-caption"></p>
+					    	</li>
+					    	<li>
+					    	  	<img src="http://a1.files.airows.com/image/upload/c_fit,cs_srgb,dpr_1.0,q_80,w_620/MTMwMTQ5NTkyMTUzOTkxODEx.jpg" />
+					      		<p class="flex-caption"></p>
+					    	</li>
+					  	</ul>
+				  	</div>
+				</div>
 			</div>
 			<div id="blog-body-container">
 				<div class = "blog-item">
